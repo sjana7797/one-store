@@ -37,7 +37,6 @@ public class ProductController {
             @RequestParam(defaultValue = "id,asc", name = "sort") String[] sort,
             @RequestParam(name = "organizationId") @NotNull @NotBlank String organizationId
     ) {
-        System.out.println("data" + page + sort.toString() + organizationId + size);
         Sort.Direction direction = sort[1].equalsIgnoreCase("desc") ? Sort.Direction.DESC : Sort.Direction.ASC;
         Pageable pageable = PageRequest.of(page, size, Sort.by(direction, sort[0]));
         List<Product> products = productService.getAllProducts(organizationId, pageable);

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: one-store
+  datasource:
+    url: "jdbc:postgresql://ep-shy-silence-a185zm7a-pooler.ap-southeast-1.aws.neon.tech/neondb"
+    username: neondb_owner
+    password: npg_8inoW0IvNCGw
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  servlet:
+    context-path: /api/v1
+
