@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+
+    // Paths
+    "baseUrl": ".",
+    "paths": {
+      "@one-store/database/*": ["../../packages/database/src/*"],
+      "@api/*": ["./src/*"]
+    }
+  }
+}
