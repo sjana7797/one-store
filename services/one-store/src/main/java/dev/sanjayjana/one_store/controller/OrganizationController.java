@@ -1,12 +1,12 @@
-package dev.sanjayjana.one_store.controllers;
+package dev.sanjayjana.one_store.controller;
 
 
-import dev.sanjayjana.one_store.entities.Organization;
+import dev.sanjayjana.one_store.enums.route.OrganizationRoute;
 import dev.sanjayjana.one_store.exceptions.BadRequestException;
-import dev.sanjayjana.one_store.responses.ApiResponse;
-import dev.sanjayjana.one_store.responses.ErrorResponse;
-import dev.sanjayjana.one_store.responses.SuccessApiResponse;
-import dev.sanjayjana.one_store.routes.OrganizationRoute;
+import dev.sanjayjana.one_store.model.Organization;
+import dev.sanjayjana.one_store.response.ApiResponse;
+import dev.sanjayjana.one_store.response.ErrorApiResponse;
+import dev.sanjayjana.one_store.response.SuccessApiResponse;
 import dev.sanjayjana.one_store.services.organization.IOrganizationService;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -46,7 +46,7 @@ public class OrganizationController {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "404",
                     description = "Organization not found",
                     content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
-                            schema = @Schema(implementation = ErrorResponse.class)),
+                            schema = @Schema(implementation = ErrorApiResponse.class)),
                     }
 
             )

@@ -1,4 +1,4 @@
-package dev.sanjayjana.one_store.routes;
+package dev.sanjayjana.one_store.enums.route;
 
 public final class ProductRoute {
     public final static String BASE_URL = "/product";

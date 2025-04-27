@@ -1,8 +1,8 @@
 package dev.sanjayjana.one_store.services.organization;
 
-import dev.sanjayjana.one_store.entities.Organization;
 import dev.sanjayjana.one_store.exceptions.NotFoundException;
-import dev.sanjayjana.one_store.repositories.OrganizationRepository;
+import dev.sanjayjana.one_store.model.Organization;
+import dev.sanjayjana.one_store.repository.OrganizationRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class OrganizationService implements IOrganizationService {
 
     private final OrganizationRepository organizationRepository;
-    
+
     @Override
     public Organization getOrganization(String organizationId) {
 

@@ -1,4 +1,4 @@
-package dev.sanjayjana.one_store.entities;
+package dev.sanjayjana.one_store.model;
 
 
 import jakarta.persistence.*;

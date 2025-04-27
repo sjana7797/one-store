@@ -1,9 +1,9 @@
 package dev.sanjayjana.one_store.utils;
 
 
-import dev.sanjayjana.one_store.entities.Organization;
 import dev.sanjayjana.one_store.exceptions.UnAuthorizedException;
-import dev.sanjayjana.one_store.repositories.OrganizationRepository;
+import dev.sanjayjana.one_store.model.Organization;
+import dev.sanjayjana.one_store.repository.OrganizationRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

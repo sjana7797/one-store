@@ -1,7 +1,7 @@
-package dev.sanjayjana.one_store.configurations;
+package dev.sanjayjana.one_store.configuration;
 
+import dev.sanjayjana.one_store.enums.route.ProductRoute;
 import dev.sanjayjana.one_store.interceptors.OrganizationCheckInterceptor;
-import dev.sanjayjana.one_store.routes.ProductRoute;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

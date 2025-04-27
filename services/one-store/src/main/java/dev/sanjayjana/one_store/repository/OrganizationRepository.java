@@ -1,6 +1,6 @@
-package dev.sanjayjana.one_store.repositories;
+package dev.sanjayjana.one_store.repository;
 
-import dev.sanjayjana.one_store.entities.Organization;
+import dev.sanjayjana.one_store.model.Organization;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

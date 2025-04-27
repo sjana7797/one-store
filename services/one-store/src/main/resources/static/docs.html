@@ -10,8 +10,18 @@
 <body>
 <!-- Need a Custom Header? Check out this example https://codepen.io/scalarorg/pen/VwOXqam -->
 <script
-        data-url="http://localhost:8080/v3/api-docs"
+        data-url="http://localhost:8080/api/v1/v3/api-docs"
         id="api-reference"></script>
+<script>
+    var configuration = {
+      theme: 'bluePlanet',
+      layout:'classic'
+    }
+
+    document.getElementById('api-reference').dataset.configuration =
+      JSON.stringify(configuration)
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+
 </body>
 </html>

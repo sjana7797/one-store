@@ -1,8 +1,7 @@
-package dev.sanjayjana.one_store.responses;
+package dev.sanjayjana.one_store.response;
 
 
 import lombok.Data;
-import lombok.Setter;
 
 @Data
 public class ApiResponse<T> {
